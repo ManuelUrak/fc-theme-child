@@ -41,4 +41,21 @@ function fc_theme_child_enqueue_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'fc_theme_child_enqueue_scripts_styles', 20 );
 
+// Allow specific Blocks
+
+function fc_theme_child_allowed_block_types(){
+	$allowed_blocks = array(
+		'acf/fc-button-link',
+		'acf/fc-heading',
+		'acf/fc-text',
+		'acf/fc-text-image',
+		'acf/fc-image',
+		'acf/fc-shortcode',
+		'core/block' 
+	);
+
+	return $allowed_blocks;
+}
+add_filter('allowed_block_types_all', 'fc_theme_child_allowed_block_types', 10);
+
 ?>

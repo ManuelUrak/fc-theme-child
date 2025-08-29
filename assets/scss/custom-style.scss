@@ -1,38 +1,16 @@
-/* MIXINS & VARIABLES */
+/* Custom stylesheet */
 
-
-@mixin l {
-	@media only screen and (max-width: 1024px) {
-		@content;
-	}
-}
-
-@mixin m {
-	@media only screen and (max-width: 768px) {
-		@content;
-	}
-}
-
-@mixin s {
-	@media only screen and (max-width: 480px) {
-		@content;
-	}
-}
+@import "variables";
+@import "../../../fc-theme/assets/scss/default-style.scss";
 
 /* GENERAL */
 
-
 /* HEADER */
-
 
 /* FOOTER */
 
-
 /* MAIN */
-
 
 /* BLOCKS */
 
-
 /* PLUGINS */
-
